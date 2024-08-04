@@ -88,5 +88,7 @@ ggplot(gold_medals, aes(x = reorder(NOC, -Medal), y = Medal, fill = NOC)) +
   scale_fill_manual(values = paris2024_palette2[1:nrow(gold_medals)])
 ```
 
+![Plot](plots/Rplot.png)
+
 [^1]: athlete_events.csv in  https://www.kaggle.com/datasets/heesoo37/120-years-of-olympic-history-athletes-and-results
 
