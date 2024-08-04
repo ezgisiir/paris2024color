@@ -12,6 +12,8 @@ roxygen2::roxygenise()
 # Load the data
 data <- read.csv("C:/Users/gokha/Desktop/archive/athlete_events.csv")
 
+#1
+
 # Filter and process the data to count gold medals by country
 gold_medals <- data %>%
   filter(Medal == "Gold") %>%
@@ -34,6 +36,7 @@ ggplot(mtcars, aes(x = factor(cyl), fill = factor(vs))) +
   scale_fill_paris2024_palette4()
 
 
+#3
 # Filter the mpg dataset
 filtered_mpg <- mpg %>%
   filter(class %in% c("compact", "suv", "midsize", "minivan", "pickup"))
@@ -42,3 +45,10 @@ filtered_mpg <- mpg %>%
 ggplot(filtered_mpg, aes(x = class, color = class)) +
   geom_point(aes(y = hwy), size = 3) +
   scale_color_olympic_rings()
+
+
+
+
+
+
+
