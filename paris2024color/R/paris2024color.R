@@ -27,9 +27,9 @@ paris2024_palette3 <- c(
 
 paris2024_palette4 <- c(
   "#eb9ec5",  # Pink
+  "#d6c278",  # Golden
   "#8083bf",  # Lavender
   "#331261",  # Violet
-  "#d6c278",  # Golden
   "#ffffff"   # White
 )
 
