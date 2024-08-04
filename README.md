@@ -59,6 +59,8 @@ ggplot(gold_medals, aes(x = reorder(NOC, -Medal), y = Medal, fill = NOC)) +
 
 ```r
 library(paris2024color)
+library(dplyr)
+library(paris2024color)
 ggplot(mtcars, aes(x = factor(cyl), fill = factor(vs))) +
   geom_bar() +
   scale_fill_paris2024_palette4()
