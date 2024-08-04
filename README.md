@@ -1,9 +1,9 @@
 # paris2024color
 Paris 2024 Olympics color palette for R
 ![Paris 2024](https://github.com/ezgisiir/paris2024color/blob/main/paris_2024.PNG?raw=true)
-## Reference
-[![The Look of the Games](https://olympics.com/en/paris-2024/information/the-look-of-the-games)
-](https://olympics.com/en/paris-2024/information/the-look-of-the-games)
+
+
+Photo^[1]
 
 
 # Color Palettes for Data Visualization
@@ -36,7 +36,7 @@ This repository contains a collection of custom color palettes inspired by the P
 
 ## R Code Examples
 
-Using 120 years of Olympic history: athletes and results[^1]
+Using 120 years of Olympic history: athletes and results[^2]
 
 ```r
 data <- read.csv(".../athlete_events.csv")
@@ -95,5 +95,6 @@ ggplot(filtered_mpg, aes(x = class, color = class)) +
 
 
 
-[^1]: athlete_events.csv in  https://www.kaggle.com/datasets/heesoo37/120-years-of-olympic-history-athletes-and-results
+[^1]: https://olympics.com/en/paris-2024/information/the-look-of-the-games
+[^2]: athlete_events.csv in  https://www.kaggle.com/datasets/heesoo37/120-years-of-olympic-history-athletes-and-results
 
