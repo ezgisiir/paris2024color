@@ -59,10 +59,10 @@ ggplot(filtered_mpg, aes(x = class, color = class)) +
 ![Plot](plots/Rplot02.png)
 
 
-
+```r
 library(paris2024color)
 ggplot(mtcars, aes(x = factor(cyl), fill = factor(vs))) +
   geom_bar() +
   scale_fill_paris2024_palette4()
-
-
+```
+![Plot](plots/Rplot01.png)
