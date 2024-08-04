@@ -34,11 +34,12 @@ This repository contains a collection of custom color palettes inspired by the P
 
 ![Olympic Medals](plots/olympic_medals.png)
 
-## R Code Example
+## R Code Examples
 
 ```r
 library(ggplot2)
 library(dplyr)
+library(paris2024color)
 
 filtered_mpg <- mpg %>%
   filter(class %in% c("compact", "suv", "midsize", "minivan", "pickup"))
@@ -54,10 +55,14 @@ ggplot(filtered_mpg, aes(x = class, color = class)) +
     title = "Highway MPG by Vehicle Class",
     subtitle = "Using Olympic Rings Palette"
   )
-
 ```
+![Plot](plots/Rplot02.png)
 
-## Deneme
 
+
+library(paris2024color)
+ggplot(mtcars, aes(x = factor(cyl), fill = factor(vs))) +
+  geom_bar() +
+  scale_fill_paris2024_palette4()
 
 
