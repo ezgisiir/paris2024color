@@ -16,20 +16,20 @@ This repository contains a collection of custom color palettes inspired by the P
 
 ## Paris 2024 Palette 2
 
-![Paris 2024 Palette 2](paris2024color/plots/paris2024_palette2.png)
+![Paris 2024 Palette 2](plots/paris2024_palette2.png)
 
 ## Paris 2024 Palette 3
 
-![Paris 2024 Palette 3](paris2024color/plots/paris2024_palette3.png)
+![Paris 2024 Palette 3](plots/paris2024_palette3.png)
 
 ## Paris 2024 Palette 4
 
-![Paris 2024 Palette 4](paris2024color/plots/paris2024_palette4.png)
+![Paris 2024 Palette 4](plots/paris2024_palette4.png)
 
 ## Olympic Rings
 
-![Olympic Rings](paris2024color/plots/olympic_rings.png)
+![Olympic Rings](plots/olympic_rings.png)
 
 ## Olympic Medals
 
-![Olympic Medals](paris2024color/plots/olympic_medals.png)
+![Olympic Medals](plots/olympic_medals.png)
