@@ -36,6 +36,39 @@ This repository contains a collection of custom color palettes inspired by the P
 
 ## R Code Examples
 
+Using 120 years of Olympic history: athletes and results[^1]
+
+```r
+data <- read.csv(".../athlete_events.csv")
+
+# Filter and process the data to count gold medals by country
+gold_medals <- data %>%
+  filter(Medal == "Gold") %>%
+  count(NOC, name = "Medal") %>%
+  arrange(desc(Medal)) %>%
+  head(5)
+
+# Plot the data
+ggplot(gold_medals, aes(x = reorder(NOC, -Medal), y = Medal, fill = NOC)) +
+  geom_bar(stat = "identity",color = "black", size = 0.7) +
+  theme(legend.position = "none") +
+  labs(x = "Top 5 Countries", y = "Number of Medals", title = "Medals per Country") +
+  scale_fill_manual(values = paris2024_palette2[1:nrow(gold_medals)])
+```
+
+![Plot](plots/Rplot.png)
+
+
+```r
+library(paris2024color)
+ggplot(mtcars, aes(x = factor(cyl), fill = factor(vs))) +
+  geom_bar() +
+  scale_fill_paris2024_palette4()
+```
+![Plot](plots/Rplot01.png)
+
+
+
 ```r
 library(ggplot2)
 library(dplyr)
@@ -59,36 +92,8 @@ ggplot(filtered_mpg, aes(x = class, color = class)) +
 ![Plot](plots/Rplot02.png)
 
 
-```r
-library(paris2024color)
-ggplot(mtcars, aes(x = factor(cyl), fill = factor(vs))) +
-  geom_bar() +
-  scale_fill_paris2024_palette4()
-```
-![Plot](plots/Rplot01.png)
 
 
-Using 120 years of Olympic history: athletes and results[^1]
-
-```r
-data <- read.csv(".../athlete_events.csv")
-
-# Filter and process the data to count gold medals by country
-gold_medals <- data %>%
-  filter(Medal == "Gold") %>%
-  count(NOC, name = "Medal") %>%
-  arrange(desc(Medal)) %>%
-  head(5)
-
-# Plot the data
-ggplot(gold_medals, aes(x = reorder(NOC, -Medal), y = Medal, fill = NOC)) +
-  geom_bar(stat = "identity",color = "black", size = 0.7) +
-  theme(legend.position = "none") +
-  labs(x = "Top 5 Countries", y = "Number of Medals", title = "Medals per Country") +
-  scale_fill_manual(values = paris2024_palette2[1:nrow(gold_medals)])
-```
-
-![Plot](plots/Rplot.png)
 
 [^1]: athlete_events.csv in  https://www.kaggle.com/datasets/heesoo37/120-years-of-olympic-history-athletes-and-results
 
