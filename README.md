@@ -34,6 +34,8 @@ This repository contains a collection of custom color palettes inspired by the P
 
 ![Olympic Medals](plots/olympic_medals.png)
 
+## R Code Example
+
 ```r
 library(ggplot2)
 library(dplyr)
@@ -53,8 +55,7 @@ ggplot(filtered_mpg, aes(x = class, color = class)) +
     subtitle = "Using Olympic Rings Palette"
   )
 
-```markdown
-![Olympic Medals](plots/Rplot02.png)
+
 
 
 
