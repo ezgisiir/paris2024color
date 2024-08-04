@@ -8,44 +8,28 @@ Paris 2024 Olympics color palette for R
 
 # Color Palettes for Data Visualization
 
-This repository contains a collection of custom color palettes designed for data visualization in R, using the `ggplot2` library. The palettes are inspired by the Paris 2024 Olympics.
+This repository contains a collection of custom color palettes inspired by the Paris 2024 Olympics. The palettes are designed for data visualization in R using the `ggplot2` library.
 
-## Installation
+## Paris 2024 Palette 1
 
-You can copy the code snippets below to recreate these palettes in your R environment:
+![Paris 2024 Palette 1](plots/paris2024_palette1.png)
 
-```r
-library(ggplot2)
+## Paris 2024 Palette 2
 
-# Define all your palettes
-palettes <- list(
-  paris2024_palette1 = c("#f1abc9", "#d9c47a", "#2393cd", "#003561", "#ffffff"),
-  paris2024_palette2 = c("#f29dc4", "#d2bd6e", "#21aca7", "#003853", "#ffffff"),
-  paris2024_palette3 = c("#faa8cc", "#d6c278", "#ff5757", "#570047", "#ffffff"),
-  paris2024_palette4 = c("#eb9ec5", "#8083bf", "#331261", "#d6c278", "#ffffff"),
-  olympic_rings = c("#0081C8", "#FCB131", "#00A651", "#000000", "#EE334E"),
-  olympic_medals = c("#D6AF36", "#A7A7AD", "#A77044")
-)
+![Paris 2024 Palette 2](plots/paris2024_palette2.png)
 
-# Generate and print palette plots
-plot_list <- lapply(names(palettes), function(palette_name) {
-  palette_data <- data.frame(
-    color = palettes[[palette_name]],
-    labels = paste(palette_name, seq_along(palettes[[palette_name]])),
-    id = seq_along(palettes[[palette_name]])
-  )
-  
-  ggplot(palette_data, aes(x = as.factor(id), y = 1, fill = color)) +
-    geom_tile(aes(width = 1, height = 1), color = "black") +
-    scale_x_discrete(expand = c(0, 0)) +
-    scale_y_discrete(expand = c(0, 0)) +
-    scale_fill_identity() +
-    theme_void() +
-    theme(legend.position = "none", panel.spacing = unit(0, "lines")) +
-    labs(title = paste("Palette:", palette_name)) +
-    xlab("") + ylab("")
-})
+## Paris 2024 Palette 3
 
-# Optionally, print plots in the console or R Markdown
-invisible(lapply(plot_list, print))
+![Paris 2024 Palette 3](plots/paris2024_palette3.png)
 
+## Paris 2024 Palette 4
+
+![Paris 2024 Palette 4](plots/paris2024_palette4.png)
+
+## Olympic Rings
+
+![Olympic Rings](plots/olympic_rings.png)
+
+## Olympic Medals
+
+![Olympic Medals](plots/olympic_medals.png)
