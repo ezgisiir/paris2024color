@@ -68,4 +68,4 @@ ggplot(mtcars, aes(x = factor(cyl), fill = factor(vs))) +
 ![Plot](plots/Rplot01.png)
 
 
-Using 120 years of Olympic history: athletes and results\footnote{athlete_events.csv in  https://www.kaggle.com/datasets/heesoo37/120-years-of-olympic-history-athletes-and-results}
+Using 120 years of Olympic history: athletes and results^{athlete_events.csv in  https://www.kaggle.com/datasets/heesoo37/120-years-of-olympic-history-athletes-and-results}
