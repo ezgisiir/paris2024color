@@ -8,7 +8,7 @@ Paris 2024 Olympics color palette for R
 
 # Color Palettes for Data Visualization
 
-This repository contains a collection of custom color palettes designed for data visualization in R, using the `ggplot2` library. The palettes are inspired by the Paris 2024 Olympics and other thematic sources.
+This repository contains a collection of custom color palettes designed for data visualization in R, using the `ggplot2` library. The palettes are inspired by the Paris 2024 Olympics.
 
 ## Installation
 
