@@ -70,8 +70,23 @@ ggplot(mtcars, aes(x = factor(cyl), fill = factor(vs))) +
 
 Using 120 years of Olympic history: athletes and results
 
+```r
+data <- read.csv(".../athlete_events.csv")
 
+# Filter and process the data to count gold medals by country
+gold_medals <- data %>%
+  filter(Medal == "Gold") %>%
+  count(NOC, name = "Medal") %>%
+  arrange(desc(Medal)) %>%
+  head(5)
 
+# Plot the data
+ggplot(gold_medals, aes(x = reorder(NOC, -Medal), y = Medal, fill = NOC)) +
+  geom_bar(stat = "identity",color = "black", size = 0.7) +
+  theme(legend.position = "none") +
+  labs(x = "Top 5 Countries", y = "Number of Medals", title = "Medals per Country") +
+  scale_fill_manual(values = paris2024_palette2[1:nrow(gold_medals)])
+```
 
 [^1]: athlete_events.csv in  https://www.kaggle.com/datasets/heesoo37/120-years-of-olympic-history-athletes-and-results
 
