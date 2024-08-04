@@ -68,7 +68,7 @@ ggplot(mtcars, aes(x = factor(cyl), fill = factor(vs))) +
 ![Plot](plots/Rplot01.png)
 
 
-Using 120 years of Olympic history: athletes and results
+Using 120 years of Olympic history: athletes and results[^1]
 
 ```r
 data <- read.csv(".../athlete_events.csv")
