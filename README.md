@@ -37,6 +37,7 @@ This package contains a collection of custom color palettes inspired by the Pari
 Using 120 years of Olympic history: athletes and results[^1]
 
 ```r
+# Load the data
 data <- read.csv(".../athlete_events.csv")
 
 # Filter and process the data to count gold medals by country
@@ -74,6 +75,7 @@ library(ggplot2)
 library(dplyr)
 library(paris2024color)
 
+# Filter the mpg dataset
 filtered_mpg <- mpg %>%
   filter(class %in% c("compact", "suv", "midsize", "minivan", "pickup"))
 
