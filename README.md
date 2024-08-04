@@ -33,3 +33,27 @@ This repository contains a collection of custom color palettes inspired by the P
 ## Olympic Medals
 
 ![Olympic Medals](plots/olympic_medals.png)
+
+```r
+library(ggplot2)
+library(dplyr)
+
+filtered_mpg <- mpg %>%
+  filter(class %in% c("compact", "suv", "midsize", "minivan", "pickup"))
+
+# Plot using ggplot2 with the defined palette
+ggplot(filtered_mpg, aes(x = class, color = class)) +
+  geom_point(aes(y = hwy), size = 3) +
+  scale_color_olympic_rings() +
+  theme_minimal() +
+  labs(
+    x = "Vehicle Class",
+    y = "Highway MPG",
+    title = "Highway MPG by Vehicle Class",
+    subtitle = "Using Olympic Rings Palette"
+  )
+```r
+![Olympic Medals](plots/Rplot02.png)
+
+
+
