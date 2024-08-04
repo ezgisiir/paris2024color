@@ -63,7 +63,7 @@ ggplot(mtcars, aes(x = factor(cyl), fill = factor(vs))) +
   geom_bar() +
   scale_fill_paris2024_palette4()
 ```
-![Plot](plots/Rplot01.png)
+![Plot](plots/Rplot04.png)
 
 
 
