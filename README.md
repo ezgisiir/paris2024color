@@ -12,7 +12,7 @@ This repository contains a collection of custom color palettes inspired by the P
 
 ## Paris 2024 Palette 1
 
-![Paris 2024 Palette 1](plots/paris2024_palette1.png)
+![Paris 2024 Palette 1](paris2024color/plots/paris2024_palette1.png)
 
 ## Paris 2024 Palette 2
 
