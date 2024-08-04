@@ -66,3 +66,6 @@ ggplot(mtcars, aes(x = factor(cyl), fill = factor(vs))) +
   scale_fill_paris2024_palette4()
 ```
 ![Plot](plots/Rplot01.png)
+
+
+Using 120 years of Olympic history: athletes and results\footnote{athlete_events.csv in  https://www.kaggle.com/datasets/heesoo37/120-years-of-olympic-history-athletes-and-results}
