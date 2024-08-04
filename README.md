@@ -52,7 +52,7 @@ ggplot(filtered_mpg, aes(x = class, color = class)) +
     title = "Highway MPG by Vehicle Class",
     subtitle = "Using Olympic Rings Palette"
   )
-```r
+}
 ##
 ![Olympic Medals](plots/Rplot02.png)
 
