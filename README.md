@@ -55,7 +55,9 @@ ggplot(filtered_mpg, aes(x = class, color = class)) +
     subtitle = "Using Olympic Rings Palette"
   )
 
+```
 
+## Deneme
 
 
 
